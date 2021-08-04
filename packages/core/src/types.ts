@@ -1,13 +1,13 @@
-import { AbstractConnector } from '@web3-react/abstract-connector'
+import { AbstractConnectorTFKT } from 'web3-react-tfkt/packages/abstract-connector'
 
 export interface Web3ReactManagerFunctions {
-  activate: (connector: AbstractConnector, onError?: (error: Error) => void, throwErrors?: boolean) => Promise<void>
+  activate: (connector: AbstractConnectorTFKT, onError?: (error: Error) => void, throwErrors?: boolean) => Promise<void>
   setError: (error: Error) => void
   deactivate: () => void
 }
 
 export interface Web3ReactManagerReturn extends Web3ReactManagerFunctions {
-  connector?: AbstractConnector
+  connector?: AbstractConnectorTFKT
   provider?: any
   chainId?: number
   account?: null | string
@@ -16,7 +16,7 @@ export interface Web3ReactManagerReturn extends Web3ReactManagerFunctions {
 }
 
 export interface Web3ReactContextInterface<T = any> extends Web3ReactManagerFunctions {
-  connector?: AbstractConnector
+  connector?: AbstractConnectorTFKT
   library?: T
   chainId?: number
   account?: null | string

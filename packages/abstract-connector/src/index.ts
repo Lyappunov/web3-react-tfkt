@@ -1,7 +1,7 @@
 import { EventEmitter } from 'events'
 import { AbstractConnectorArguments, ConnectorUpdate, ConnectorEvent } from '@web3-react/types'
 
-export abstract class AbstractConnector extends EventEmitter {
+export abstract class AbstractConnectorTFKT extends EventEmitter {
   public readonly supportedChainIds?: number[]
 
   constructor({ supportedChainIds }: AbstractConnectorArguments = {}) {

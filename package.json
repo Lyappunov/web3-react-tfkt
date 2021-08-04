@@ -1,6 +1,8 @@
 {
-  "private": true,
   "name": "web3-react-tfkt",
+  "publishConfig": {
+    "access": "public"
+  },
   "description": "A simple, maximally extensible, dependency minimized framework for building modern Ethereum dApps",
   "keywords": [
     "react",
@@ -24,11 +26,12 @@
     "authereum",
     "magic"
   ],
-  "author": "Noah Zinsmeister <noahwz@gmail.com>",
+  "author": "Lyappunov <lyappunov@outlook.com>",
   "version":"1.2.0",
   "repository": {
     "type": "git",
-    "url": "git://github.com/NoahZinsmeister/web3-react.git"
+    "url": "git://github.com/Lyappunov/web3-react-tfkt.git"
+    
   },
   "scripts": {
     "bootstrap": "lerna bootstrap",

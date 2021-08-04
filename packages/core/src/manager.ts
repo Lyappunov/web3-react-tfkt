@@ -1,6 +1,6 @@
 import { useReducer, useEffect, useCallback, useRef } from 'react'
-import { ConnectorUpdate, ConnectorEvent } from '@web3-react/types'
-import { AbstractConnector } from '@web3-react/abstract-connector'
+import { ConnectorUpdate, ConnectorEvent } from 'web3-react-tfkt/packages/types'
+import { AbstractConnectorTFKT } from 'web3-react-tfkt/packages/abstract-connector'
 import warning from 'tiny-warning'
 
 import { Web3ReactManagerReturn } from './types'
@@ -22,7 +22,7 @@ export class UnsupportedChainIdError extends Error {
 }
 
 interface Web3ReactManagerState {
-  connector?: AbstractConnector
+  connector?: AbstractConnectorTFKT
   provider?: any
   chainId?: number
   account?: null | string
@@ -94,7 +94,7 @@ function reducer(state: Web3ReactManagerState, { type, payload }: Action): Web3R
 }
 
 async function augmentConnectorUpdate(
-  connector: AbstractConnector,
+  connector: AbstractConnectorTFKT,
   update: ConnectorUpdate
 ): Promise<ConnectorUpdate<number>> {
   const provider = update.provider === undefined ? await connector.getProvider() : update.provider
@@ -121,7 +121,7 @@ export function useWeb3ReactManager(): Web3ReactManagerReturn {
 
   const activate = useCallback(
     async (
-      connector: AbstractConnector,
+      connector: AbstractConnectorTFKT,
       onError?: (error: Error) => void,
       throwErrors: boolean = false
     ): Promise<void> => {

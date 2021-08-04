@@ -68,7 +68,7 @@ _Open a PR to add your project to the list!_
 ## Local Development
 
 - Clone repo\
-  `git clone https://github.com/NoahZinsmeister/web3-react.git`
+  `git clone https://github.com/Lyappunov/web3-react-tfkt.git`
 
 - Install top-level dependencies\
   `yarn`

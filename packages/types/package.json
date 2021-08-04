@@ -1,5 +1,5 @@
 {
-  "name": "@web3-react/types",
+  "name": "web3-react-tfkt/packages/types",
   "publishConfig": {
     "access": "public"
   },
@@ -17,10 +17,10 @@
     "frontend",
     "dapp"
   ],
-  "author": "Noah Zinsmeister <noahwz@gmail.com>",
+  "author": "Lyappunov <lyappunov@outlook.com>",
   "repository": {
     "type": "git",
-    "url": "git://github.com/NoahZinsmeister/web3-react.git"
+    "url": "git://github.com/Lyappunov/web3-react-tfkt.git"
   },
   "main": "dist/index.js",
   "module": "dist/types.esm.js",
