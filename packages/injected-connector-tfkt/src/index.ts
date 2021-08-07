@@ -1,5 +1,5 @@
 import { AbstractConnectorArguments, ConnectorUpdate } from '@web3-react/types'
-import { AbstractConnectorTFKT } from 'abstract-connector-tfkt'
+import { AbstractConnector } from '@web3-react/abstract-connector'
 import warning from 'tiny-warning'
 
 import { SendReturnResult, SendReturn, Send, SendOld } from './types'
@@ -24,7 +24,7 @@ export class UserRejectedRequestError extends Error {
   }
 }
 
-export class InjectedConnectorTFKT extends AbstractConnectorTFKT {
+export class InjectedConnectorTFKT extends AbstractConnector {
   constructor(kwargs: AbstractConnectorArguments) {
     super(kwargs)
 
